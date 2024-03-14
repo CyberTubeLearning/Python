@@ -1,0 +1,30 @@
+
+from datetime import date
+
+today = date.today()
+
+#Change this to your birth date
+date_of_birth = date(2003, 2, 25)
+
+birthday = date(today.year, date_of_birth.month, date_of_birth.day)
+days_until_birthday = (birthday-today).days
+days_alive = (today-date_of_birth).days
+
+print( 'You are ' + str(days_alive) + ' days old')
+
+if days_until_birthday > 0:
+	print( 'It\'s ' + str(days_until_birthday) + ' days until your Birthday')
+elif days_until_birthday == 0:
+	print( 'Happy Birthday!')
+else:
+	print( 'You\'ll have to wait until next year for another birthday')
+	
+	
+
+
+import phonenumbers
+from phonenumbers import geocoder
+phone_number1 = phonenumbers.parse("+919006611781")
+phone_number2 = phonenumbers.parse("+917654708577")
+print(geocoder.description_for_number(phone_number1,'en'))
+print(geocoder.description_for_number(phone_number2,'en'))
