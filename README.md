@@ -1,3 +1,2 @@
 # Python
-Data analyst with python..
-                                     ##### IPL_2022 #####
+# Data analyst with python..
